@@ -1,0 +1,5 @@
+<h1>Hello</h1>
+<app-progress-bar [progress]="counterProgress"></app-progress-bar>
+<app-countdown [init]="totalCountdown"
+               (onDecrease)="updateProgress($event)"
+               (onComplete)="countdownFinished()"></app-countdown>
